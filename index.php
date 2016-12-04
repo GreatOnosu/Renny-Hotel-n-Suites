@@ -15,8 +15,8 @@
 		</div>
 		<div class="notice-board">
 			<div class="notice-text">
-				<h2>Find and book hotels in Nigeria.</h2>
-				<h4>Search through 8342 hotels in Nigeria</h4>
+				<h2>Make a reservation with Us Today</h2>
+				<h4>Search Through our Five Hotels</h4>
 			</div>
 			<div class="notice-book">
 				
