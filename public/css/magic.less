@@ -1,0 +1,251 @@
+/****************************** Style *****************************************/
+/****************************** Variables *****************************************/
+@primary-color: #381d40;
+@secondary-color: #967a50;
+@norm-border: 1px solid #000;
+/****************************** Mixins *****************************************/
+.TopShadow{
+	background-color: #fff;
+	-webkit-box-shadow: 0 1px 3px 0 rgba(0,0,0,.2);
+	-moz-box-shadow: 0 1px 3px 0 rgba(0,0,0,.2);
+	box-shadow: 0 1px 3px 0 rgba(0,0,0,.2);
+}
+.HoverShadow{
+	background-color: #fff;
+	-webkit-box-shadow: 0 2px 6px 0 rgba(0,0,0,.6);
+	-moz-box-shadow: 0 2px 6px 0 rgba(0,0,0,.6);
+	box-shadow: 0 2px 6px 0 rgba(0,0,0,.6);
+}
+.FormStyle{
+	width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #fff;
+    border-radius: 2px;
+    box-sizing: border-box;
+    background-color: transparent;
+    color: #fff;
+    font-size: 14px;
+}
+/****************************** Main *****************************************/
+body{
+	background-color: #ccc;
+}
+#top-wrap{
+	background: url("../images/team_bg.jpg");
+	height: 400px;
+	position: absolute;
+	width: 100%;
+	top: 0;
+	left: 0;
+}
+#top-nav{
+	position: fixed;
+	border-radius: 0 0 5px 5px;
+	margin: 0px 14%;
+	padding: 20px;
+	width: 70%;
+	.TopShadow;
+	z-index: 999;
+}
+.title{
+	float: left;
+	margin: 0px 60px 0px 20px;
+}
+.title a{
+	text-decoration: none;
+	font-size: 32px;
+	color: @primary-color;
+}
+.navigation{
+	float:left;
+	margin-top: 7px;
+}
+.navigation a{
+	text-decoration: none;
+	padding: 20px;
+	font-size: 18px;
+	color: #333;
+}
+.navigation a:hover{
+	background-color: @primary-color;	
+	color: #fff;
+}
+.breadcrumb{
+	color: #fff;
+	margin-top: 200px;
+	font-size: 42px;
+	line-height: 5%;
+	text-align: center;
+	text-shadow: 1px 1px 1px #000;
+}
+#reserve{
+	margin: 350px 3.5% 0 3.5%;
+	border-radius: 5px 5px 0 0;
+	width: 90%;
+	.TopShadow;
+	padding: 20px;
+	display: flex;
+	position: relative;
+	z-index: 99;
+}
+.intro-text{
+	width: 60%;
+	padding: 10px 20px;
+}
+.intro-text h1{
+	color: @primary-color;
+}
+.intro-text p{
+	font-size: 18px;
+}
+.booking-tab{
+	background-color: rgba(0,0,0,.7);
+	width: 40%;
+}
+.booking-tab h2{
+	text-align: center;
+	color: #ccc;
+}
+#horizon{
+	padding: 10px 50px;
+}
+label{
+	color: #ccc;
+}
+input, select, input[type=email]{
+	.FormStyle;
+}
+.btn-book{
+	color: #fff;
+	border: 2px solid #fff;
+	background-color: transparent;
+	padding: 10px 60px;
+	font-size: 18px;
+	width: 58%;
+	margin: 50px 20% 20px 20%;
+}
+.btn-book:hover{
+	background-color: @primary-color;
+	cursor: pointer;
+}
+#our-hotels{
+	background-color: #efefef;
+	padding: 50px;
+}
+#our-hotels span{
+	font-size: 32px;
+	font-weight: 600;
+	color: @primary-color;
+}
+.hotels-contain{
+	display: flex;
+}
+.hotels-box{
+	height: 350px;
+	background-color: #fff;
+	width: 30%;
+	margin: 10px 1.5%;
+	.TopShadow;
+}
+.hotels-box:hover{
+	.HoverShadow;
+}
+.hotel-pix{
+	height: 250px;
+	overflow: hidden;
+}
+.hotel-view{
+	margin-top: 10px;
+	border-top: 1px dotted @secondary-color;
+	padding: 20px;
+}
+.hotel-view a{
+	font-size: 32px;
+	color: @secondary-color;
+}
+.hotel-view a:hover{
+	cursor: pointer;
+	color: @primary-color;
+}
+#restaurant{
+	background-image: url("../images/paralex.jpg");
+	background-attachment: fixed;
+	height: 400px;
+}
+.key-note{
+	position: absolute;
+	height: 150px;
+	background-color: #fff;
+	border-radius: 5px;
+	width: 40%;
+	margin: 100px 0 0 100px;
+}
+.key-note h1{
+	padding: 10px 20px;
+	color: @primary-color;
+}
+.top-color{
+	background-color: @secondary-color;
+	height: 5px;
+	border-radius: 3px 3px 0 0;
+}
+#footer{
+	background-color: @primary-color;
+	height: 150px;
+	text-align: center;
+	padding: 50px 0 0 0;
+}
+#footer span, #footer p{
+	color: @secondary-color;
+	font-size: 18px;
+}
+#footer a{
+	text-decoration: none;
+	padding: 0px 5px;
+	color: @secondary-color;
+}
+#footer a:hover{
+	color: #fff;
+	cursor: pointer;
+}
+.foot-line{
+	border-right: 1px dotted @secondary-color;
+}
+/****************************** Gallery *****************************************/
+.boxes div{
+	position: relative;
+	overflow: hidden;
+	background-color: #eee;
+	width: 25%;
+	height: 250px;
+	margin: 10px;
+	box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.2);
+}
+.boxes div:hover{
+	box-shadow: 0 12px 20px 3px rgba(0, 0, 0, 0.4);
+	cursor: pointer;
+	border-radius: 50%;
+	transition: all .6s;
+}
+.boxes div .inner-img{
+	width: 800px !important;
+	height: 800px;
+	top: -50px;
+	left: -50px;
+	background-color: rgba(255, 255, 255, 0.1);
+	color: transparent;
+	padding: 120px 0 0 180px;
+	font-size: 4px;
+}
+.boxes div .inner-img:hover{
+	background-color: @primary-color; 
+	opacity: .65;
+	color: #fff;
+	font-size: 24px;
+	border-radius: 0 !important;
+	padding: 120px 0 0 80px;
+	 -webkit-transition: font-size .2s, padding .6s, background-color 1s ease;
+    transition: font-size .2s, padding .6s, background-color 1s ease;
+}

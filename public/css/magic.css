@@ -1,0 +1,22 @@
+/****************************** Style *****************************************/
+@primary-color: #381d40;
+
+body{
+	background-color: #ccc;
+}
+#top-wrap{
+	background: url('../images/team_bg.jpg');
+}
+#top-nav{
+	background-color: #fff;
+	position: fixed;
+	border: 1px solid #000;
+	border-radius: 5px;
+	padding: 20px;
+}
+.title{
+	float: left;
+}
+.navigation{
+	float:left;
+}
