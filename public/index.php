@@ -1,20 +1,20 @@
 <?php
-	require '../Core/Router.php';
-	$router = new Router();
-	$router->add('', ['controller'=> 'Home', 'action'=>'index']);
-	$router->add('gallery', ['controller'=> 'Home', 'action'=>'index']);
+	// require '../Core/Router.php';
+	// $router = new Router();
+	// $router->add('', ['controller'=> 'Home', 'action'=>'index']);
+	// $router->add('gallery', ['controller'=> 'Home', 'action'=>'index']);
 
-	$url = $_SERVER['QUERY_STRING'];
-	echo "<pre>";
-		var_dump($router->getRoutes());
-		echo "</pre>";
-	if($router->match($url)){
-		echo "<pre>";
-		var_dump($router->getParams());
-		echo "</pre>";
-	}else{
-		echo "No route found for url'$url'";
-	}
+	// $url = $_SERVER['QUERY_STRING'];
+	// echo "<pre>";
+	// 	var_dump($router->getRoutes());
+	// 	echo "</pre>";
+	// if($router->match($url)){
+	// 	echo "<pre>";
+	// 	var_dump($router->getParams());
+	// 	echo "</pre>";
+	// }else{
+	// 	echo "No route found for url'$url'";
+	// }
 ?>
 <!DOCTYPE html>
 <html>
