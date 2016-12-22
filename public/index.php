@@ -70,7 +70,7 @@
 			    	<option>2</option>
 			    	<option>3</option>
 			    </select>
-			    <button class="btn-book">Send</button>
+			    <button class="btn-book">Book</button>
 			</form>
 		</div>
 	</div>
