@@ -6,8 +6,9 @@
 <!DOCTYPE html>
 <html>
 <head runat="server">
+	<base href="/RHS/public/">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Renny's Hotel n Suites</title>
+	<title>Renny Hotel n Suites</title>
 	<link href="css/magic.less" type="text/css" rel="stylesheet/less">
 	<link rel="stylesheet" href="../vendor/jquery-ui.css">
     <script src="../vendor/jquery.min.js"></script>
@@ -18,14 +19,9 @@
 	<div id="top-wrap">
 		<div id="top-nav">
 			<div class="title">
-				<a>Renny's Hotel n Suites</a>
+				<a>Renny Hotel n Suites</a>
 			</div>
-			<div class="navigation">
-				<a href="index.php">Home</a>
-				<a href="our_hotels.php">Our Hotels</a>
-				<a href="gallery.php">Gallery</a>
-				<a href="contact_us.php">Contact Us</a>
-			</div>
+			<?php include 'includes/nav.php'?>
 		</div>
 		<div class="breadcrumb">
 			<h1>Contact Us</h1>
@@ -72,15 +68,7 @@
 			</div>
 		</div>
 	</div>
-	<div id="footer">
-		<span>Contact Us @ Covenant University Ota.</span>
-		<p>
-			<a href="" class="foot-line">Renny's Hotel Abuja</a>
-			<a href="" class="foot-line">Renny's Hotel Delta</a>
-			<a href="">Renny's Hotel Lagos</a>
-		</p>
-		<p>&copy 2016 Renny's Hotel n Suites. Designed By CU Team.</p>
-	</div>
+	<?php include'includes/footer.php'?>
 </body>
 <script>
       /* global setting */
